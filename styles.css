@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Andika&family=Catamaran:wght@400;500&family=Inter:wght@300&family=Kaushan+Script&family=Labrada:wght@300&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;500&family=PT+Sans&family=Poppins&family=Raleway:ital,wght@0,300;0,500;0,600;1,300&family=Tangerine:wght@400;700&family=Ubuntu:wght@300&family=Vollkorn&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-family: "Andika", sans-serif;
+  font-family: "Catamaran", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Labrada", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Tangerine", cursive;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Vollkorn", serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  text-align: center;
+  place-items: center;
+  background: lightskyblue;
+}
+
+.circular {
+  height: 100px;
+  width: 100px;
+  background: gray;
+  position: relative;
+  transform: scale(2);
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: lightskyblue;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 50px);
+}
+
+.circular .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+}
